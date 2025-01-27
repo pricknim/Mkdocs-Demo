@@ -1,0 +1,17 @@
+site_name: My Docs
+# theme:
+#   name: 'mkdocs'
+#   custom_dir: 'custom_theme/'
+theme: simplex
+markdown_extensions:
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+extra_css:
+  - ./mkdocsoad.css
+plugins:
+  - search
+  - neoteroi.mkdocsoad:
+      use_pymdownx: true
+
