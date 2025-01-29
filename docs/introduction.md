@@ -12,12 +12,13 @@ The purpose of this demo documentation is to highlight the functionalities and e
 
 We will try to showcase some of the most interesting features of <mark>**MkDocs**</mark>. These features include:
 
-1. Basic text editing in the UI
-2. The Sync functionalities
+1. ~~Basic text editing in the UI~~
+2. ~~The Sync functionalities~~
 3. Markdown support
 4. _OpenAPI_ support
-5. And some more 😄​
+5. [Available plugins](https://github.com/mkdocs/catalog)  
+6. And some more 😄​
 
-
+some changes here as well please work
 
 Mention the different plans as well.

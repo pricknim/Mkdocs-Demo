@@ -2,16 +2,24 @@ site_name: My Docs
 # theme:
 #   name: 'mkdocs'
 #   custom_dir: 'custom_theme/'
-theme: simplex
+site_url: http://localhost:8000
+theme:
+  name: material
+
 markdown_extensions:
   - pymdownx.details
-  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:mermaid2.fence_mermaid_custom
   - pymdownx.tabbed:
       alternate_style: true
 extra_css:
   - ./mkdocsoad.css
 plugins:
   - search
+  - mermaid2
   - neoteroi.mkdocsoad:
       use_pymdownx: true
   - mike:
@@ -21,6 +29,17 @@ plugins:
       deploy_prefix: ''
       canonical_version: null
       version_selector: true
-      css_dir: css
-      javascript_dir: js
+      css_dir: ./selector/css/version-select.css
+      javascript_dir: ./selector/js/version-select.js
 
+extra:
+  version:
+    provider: mike
+    default: latest
+    alias: true
+
+# extra_css:
+#   - ./selector/css/version-select.css
+
+# extra_javascript:
+#   - ./selector/js/version-select.js
